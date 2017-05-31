@@ -192,7 +192,6 @@ abstract class SimpleTypeBase
     public function __toString()
     {
         return strval($this->__value);
-
     }
 
     private function setEnumoration($value)
