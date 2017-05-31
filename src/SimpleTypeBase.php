@@ -199,7 +199,6 @@ abstract class SimpleTypeBase
             default:
                 $this->handleSetNumeric($name, $value);
         }
-
     }
 
     private function setEnumoration($value)
