@@ -60,14 +60,14 @@ abstract class xsAnySimpleType
     protected function fixWhitespace($val)
     {
         switch ($this->whiteSpace) {
-        case "preserve":
-            return $val;
-        case "replace":
-            return preg_replace('/\s/', ' ', $val);
-        case "collapse":
-            return preg_replace('/\s+/', ' ', $val);
-        default:
-            throw new \InvalidArgumentException(__CLASS__ . " Called Fix whitespace with invalid handle operation");
+            case "preserve":
+                return $val;
+            case "replace":
+                return preg_replace('/\s/', ' ', $val);
+            case "collapse":
+                return preg_replace('/\s+/', ' ', $val);
+            default:
+                throw new \InvalidArgumentException(__CLASS__ . " Called Fix whitespace with invalid handle operation");
         }
     }
     protected function isOKInternal($value)
