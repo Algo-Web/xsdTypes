@@ -33,6 +33,9 @@ trait LengthTrait
         $this->minLength = $value;
     }
 
+    /**
+     * @param integer $value
+     */
     private function checkValidMinMaxLength($value, $min = 0)
     {
         if (((int)$value) != $value) {
