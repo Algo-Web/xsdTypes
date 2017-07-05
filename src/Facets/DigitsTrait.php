@@ -5,17 +5,17 @@ trait DigitsTrait
 {
     /**
      * @Exclude
-     * @var integer Specifies the maximum number of decimal places allowed. Must be equal to or greater than zero
+     * @var integer Specifies the maximum number of decimal places allowed.  Must be equal to or greater than zero
      */
     private $fractionDigits = null;
     /**
      * @Exclude
-     * @var integer Specifies the exact number of digits allowed. Must be greater than zero
+     * @var integer Specifies the exact number of digits allowed.  Must be greater than zero
      */
     private $totalDigits = null;
 
     /**
-     * @param integer $fd Specifies the exact number of digits allowed. Must be greater than zero
+     * @param integer $fd Specifies the exact number of digits allowed.  Must be greater than zero
      */
     public function setTotalDigits($fd)
     {
@@ -56,7 +56,7 @@ trait DigitsTrait
     }
 
     /**
-     * @param integer $fd Specifies the maximum number of decimal places allowed. Must be equal to or greater than zero
+     * @param integer $fd Specifies the maximum number of decimal places allowed.  Must be equal to or greater than zero
      */
     public function setFractionDigits($fd)
     {

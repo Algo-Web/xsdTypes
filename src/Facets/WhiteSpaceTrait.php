@@ -5,7 +5,7 @@ trait WhiteSpaceTrait
 {
     /**
      * @Exclude
-     * @var string Specifies how white space (line feeds, tabs, spaces, and carriage returns) is handled
+     * @var string Specifies how whitespace (line feeds, tabs, spaces, and carriage returns) is handled.
      */
     private $whiteSpace = "preserve";
 

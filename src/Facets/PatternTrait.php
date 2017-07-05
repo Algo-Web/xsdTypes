@@ -5,7 +5,7 @@ trait PatternTrait
 {
     /**
      * @Exclude
-     * @var string Defines the exact sequence of characters that are acceptable
+     * @var string Defines the exact sequence of characters that are acceptable.
      */
     private $pattern = null;
 

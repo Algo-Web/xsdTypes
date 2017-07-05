@@ -2,8 +2,8 @@
 namespace AlgoWeb\xsdTypes;
 
 /**
- * The type xsd:int represents an integer between -2147483648 and 2147483647. An xsd:int is a sequence of digits,
- * optionally preceded by a + or - sign. Leading zeros are permitted, but decimal points are not
+ * The type xsd:int represents an integer between -2147483648 and 2147483647.  An xsd:int is a sequence of digits,
+ * optionally preceded by a + or - sign.  Leading zeros are permitted, but decimal points are not
  * @package AlgoWeb\xsdTypes
  */
 class xsInt extends xsLong

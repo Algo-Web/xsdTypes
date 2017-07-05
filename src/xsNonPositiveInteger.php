@@ -2,8 +2,9 @@
 namespace AlgoWeb\xsdTypes;
 
 /**
- * The type xsd:nonPositiveInteger represents an arbitrarily large non-positive integer. An xsd:nonPositiveInteger is
- * a sequence of digits, optionally preceded by a - sign. Leading zeros are permitted, but decimal points are not.
+ * The type xsd:nonPositiveInteger represents an arbitrarily large-in-magnitude non-positive integer. An
+ * xsd:nonPositiveInteger is a sequence of digits, optionally preceded by a - sign. Leading zeros are permitted, but
+ * decimal points are not.
  * @package AlgoWeb\xsdTypes
  */
 class xsNonPositiveInteger extends xsInteger

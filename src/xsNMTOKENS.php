@@ -4,7 +4,7 @@ namespace AlgoWeb\xsdTypes;
 use AlgoWeb\xsdTypes\Facets\LengthTrait;
 
 /**
- * The type xsd:NMTOKENS represents a list of NMTOKEN values separated by whitespace. There must be at least one
+ * The type xsd:NMTOKENS represents a list of NMTOKEN values separated by whitespace.  There must be at least one
  * NMTOKEN in the list.
  *
  * @package AlgoWeb\xsdTypes

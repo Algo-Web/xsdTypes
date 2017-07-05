@@ -4,8 +4,8 @@ namespace AlgoWeb\xsdTypes;
 use AlgoWeb\xsdTypes\Facets\LengthTrait;
 
 /**
- * The type xsd:IDREFS represents a list of IDREF values separated by whitespace. There must be at least one IDREF in
- * the list. Each of the IDREF values must match an ID contained in the same XML document.
+ * The type xsd:IDREFS represents a list of IDREF values separated by whitespace.  There must be at least one IDREF in
+ * the list.  Each of the IDREF values must match an ID contained in the same XML document.
  * @package AlgoWeb\xsdTypes
  */
 class xsIDREFS extends xsAnySimpleType

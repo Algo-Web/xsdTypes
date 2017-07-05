@@ -2,8 +2,8 @@
 namespace AlgoWeb\xsdTypes;
 
 /**
- * The type xsd:negativeInteger represents an arbitrarily large negative integer. An xsd:negativeInteger is a
- * sequence of digits, preceded by a - sign. Leading zeros are permitted, but decimal points are not.
+ * The type xsd:negativeInteger represents an arbitrarily large-in-magnitude negative integer.  An xsd:negativeInteger
+ * is a sequence of digits, preceded by a - sign. Leading zeros are permitted, but decimal points are not.
  * @package AlgoWeb\xsdTypes
  */
 class xsNegativeInteger extends xsNonPositiveInteger

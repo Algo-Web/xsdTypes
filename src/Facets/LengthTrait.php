@@ -5,17 +5,17 @@ trait LengthTrait
 {
     /**
      * @Exclude
-     * @var integer Specifies the maximum number of characters or list items allowed. Must be equal to or greater than zero
+     * @var integer Specifies the maximum number of characters or list items allowed.  Must be equal to or greater than zero
      */
     private $maxLength = null;
     /**
      * @Exclude
-     * @var integer Specifies the minimum number of characters or list items allowed. Must be equal to or greater than zero
+     * @var integer Specifies the minimum number of characters or list items allowed.  Must be equal to or greater than zero
      */
     private $minLength = null;
 
     /**
-     * @param integer $value Specifies the exact number of characters or list items allowed. Must be equal to or greater than zero
+     * @param integer $value Specifies the exact number of characters or list items allowed.  Must be equal to or greater than zero
      */
     protected function setLengthFacet($value)
     {
@@ -24,7 +24,7 @@ trait LengthTrait
     }
 
     /**
-     * @param integer $value Specifies the minimum number of characters or list items allowed. Must be equal to or greater than zero
+     * @param integer $value Specifies the minimum number of characters or list items allowed.  Must be equal to or greater than zero
      */
     protected function setMinLengthFacet($value)
     {
@@ -46,7 +46,7 @@ trait LengthTrait
     }
 
     /**
-     * @param integer $value Specifies the maximum number of characters or list items allowed. Must be equal to or greater than zero
+     * @param integer $value Specifies the maximum number of characters or list items allowed.  Must be equal to or greater than zero
      */
     protected function setMaxLengthFacet($value)
     {

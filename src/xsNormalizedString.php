@@ -7,8 +7,8 @@ namespace AlgoWeb\xsdTypes;
  * (using the entities &lt; and &amp;, respectively) when used in strings in XML instances.
  *
  * The xsd:normalizedString type has a whiteSpace facet of replace, which means that the processor replaces each
- * carriage return, line feed, and tab by a single space. This processing is equivalent to the processing of CDATA
- * attribute values in XML 1.0. There is no collapsing of multiple consecutive spaces into a single space.lass
+ * carriage return, line feed, and tab by a single space.  This processing is equivalent to the processing of CDATA
+ * attribute values in XML 1.0.  There is no collapsing of multiple consecutive spaces into a single space. Class
  * xsNormalizedString
  *
  * @package AlgoWeb\xsdTypes

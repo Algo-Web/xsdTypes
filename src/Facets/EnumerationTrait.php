@@ -10,15 +10,15 @@ trait EnumerationTrait
     private $enumeration = null;
 
     /**
-     * @param array $enumorationValues Defines a list of acceptable values
+     * @param array $enumerationValues Defines a list of acceptable values
      */
-    protected function setEnumeration(array $enumorationValues)
+    protected function setEnumeration(array $enumerationValues)
     {
-        $this->enumeration = $enumorationValues;
+        $this->enumeration = $enumerationValues;
     }
 
     /**
-     * @param string $enumorationValue adds a value to the enumeration set.
+     * @param string $enumerationValue Adds a value to the enumeration set.
      */
     protected function addEnumeration($enumerationValue)
     {
