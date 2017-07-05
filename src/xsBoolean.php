@@ -24,7 +24,7 @@ class xsBoolean extends xsAnySimpleType
     {
         if (boolval($this->value) !== $this->value) {
             throw new \InvalidArgumentException(
-                "the provided value for " . __CLASS__ . " needs to be a boolean: "
+                "The provided value for " . __CLASS__ . " needs to be a boolean."
             );
         }
     }

@@ -27,17 +27,17 @@ trait DigitsTrait
     {
         if (!is_numeric($fd)) {
             throw new \InvalidArgumentException(
-                "the provided fractionDigits for  " . __CLASS__ . " is non numeric "
+                "The provided fractionDigits for  " . __CLASS__ . " is non numeric."
             );
         }
         if (abs($fd) != $fd) {
             throw new \InvalidArgumentException(
-                "the provided fractionDigits for  " . __CLASS__ . " must be non negative "
+                "The provided fractionDigits for  " . __CLASS__ . " must be non negative."
             );
         }
         if (round($fd) != $fd) {
             throw new \InvalidArgumentException(
-                "the provided fractionDigits for  " . __CLASS__ . " must be a whole number "
+                "The provided fractionDigits for  " . __CLASS__ . " must be a whole number."
             );
         }
     }
@@ -50,7 +50,7 @@ trait DigitsTrait
         $stringVal = explode(".", (string)$v);
         if ($this->totalDigits < strlen($stringVal[0])) {
             throw new \InvalidArgumentException(
-                "the number of fractionDigits for  " . __CLASS__ . " is greater the allowed. "
+                "The number of fractionDigits for  " . __CLASS__ . " is greater than allowed."
             );
         }
     }
@@ -73,7 +73,7 @@ trait DigitsTrait
         if (2 == count($stringVal)) {
             if ($this->fractionDigits < strlen($stringVal[1])) {
                 throw new \InvalidArgumentException(
-                    "the number of fractionDigits for  " . __CLASS__ . " is greater the allowed. "
+                    "The number of fractionDigits for  " . __CLASS__ . " is greater than allowed."
                 );
             }
         }

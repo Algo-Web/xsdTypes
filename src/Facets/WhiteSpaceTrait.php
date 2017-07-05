@@ -19,14 +19,14 @@ trait WhiteSpaceTrait
             case "collapse":
                 return preg_replace('/\s+/', ' ', $val);
             default:
-                throw new \InvalidArgumentException(__CLASS__ . " Called Fix whitespace with invalid handle operation");
+                throw new \InvalidArgumentException(__CLASS__ . " called fixWhitespace with invalid handle operation.");
         }
     }
 
     protected function setWhiteSpaceFacet($value)
     {
         if (!in_array($value, ["preserve", "replace", "collapse"])) {
-            throw new \InvalidArgumentException("Invalid white space handleing method " . __CLASS__);
+            throw new \InvalidArgumentException("Invalid whitespace handling method " . __CLASS__);
         }
         $this->whiteSpace = $value;
     }

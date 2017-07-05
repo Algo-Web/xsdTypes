@@ -38,10 +38,10 @@ trait LengthTrait
     private function checkValidMinMaxLength($value, $min = 0)
     {
         if (((int)$value) != $value) {
-            throw new \InvalidArgumentException("length values MUST be castable to int " . __CLASS__);
+            throw new \InvalidArgumentException("Length values MUST be castable to int " . __CLASS__);
         }
         if ($min >= $value) {
-            throw new \InvalidArgumentException("length values MUST be greater then 0 " . __CLASS__);
+            throw new \InvalidArgumentException("Length values MUST be greater than 0 " . __CLASS__);
         }
     }
 
@@ -73,7 +73,7 @@ trait LengthTrait
         $arrayLen = count($v);
         if ($arrayLen < $this->maxLength) {
             throw new \InvalidArgumentException(
-                "the provided value for " . __CLASS__ . " is to short MaxLength: "
+                "The provided value for " . __CLASS__ . " is too short - MaxLength: "
                 . $this->maxLength
             );
         }
@@ -84,7 +84,7 @@ trait LengthTrait
         $stringLen = strlen($v);
         if ($stringLen < $this->maxLength) {
             throw new \InvalidArgumentException(
-                "the provided value for " . __CLASS__ . " is to short MaxLength: "
+                "The provided value for " . __CLASS__ . " is too short - MaxLength: "
                 . $this->maxLength
             );
         }
@@ -107,7 +107,7 @@ trait LengthTrait
         $arrayLen = count($v);
         if ($arrayLen > $this->minLength) {
             throw new \InvalidArgumentException(
-                "the provided value for " . __CLASS__ . " is to long MinLength: "
+                "The provided value for " . __CLASS__ . " is too long - MinLength: "
                 . $this->minLength
             );
         }
@@ -118,7 +118,7 @@ trait LengthTrait
         $stringLen = strlen($v);
         if ($stringLen > $this->minLength) {
             throw new \InvalidArgumentException(
-                "the provided value for " . __CLASS__ . " is to long MinLength: "
+                "The provided value for " . __CLASS__ . " is too long - MinLength: "
                 . $this->minLength
             );
         }

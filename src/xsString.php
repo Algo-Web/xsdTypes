@@ -48,7 +48,7 @@ class xsString extends xsAnySimpleType
         $this->checkMinLength($this->value);
         if (is_array($this->value) || is_object($this->value)) {
             throw new \InvalidArgumentException(
-                "the provided value for " . __CLASS__ . " is should not be an array or an object: "
+                "The provided value for " . __CLASS__ . " must not be an array or an object."
             );
         }
     }

@@ -51,22 +51,22 @@ class xsLanguage extends xsToken
         parent::isOK();
         if (null == $this->value) {
             throw new \InvalidArgumentException(
-                "the provided value for " . __CLASS__ . " can not be null "
+                "The provided value for " . __CLASS__ . " can not be null."
             );
         }
         if (!is_string($this->value)) {
             throw new \InvalidArgumentException(
-                "the provided value for " . __CLASS__ . " Must be a string "
+                "The provided value for " . __CLASS__ . " must be a string."
             );
         }
         if (empty(trim($this->value))) {
             throw new \InvalidArgumentException(
-                "the provided value for " . __CLASS__ . " Must be a not be a blank string "
+                "The provided value for " . __CLASS__ . " must not be a blank string."
             );
         }
         if (8 < strlen($this->value)) {
             throw new \InvalidArgumentException(
-                "the provided value for " . __CLASS__ . " Must be a not be longer then 8 characters "
+                "The provided value for " . __CLASS__ . " must not be longer than 8 characters."
             );
         }
     }

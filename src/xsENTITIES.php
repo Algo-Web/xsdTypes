@@ -29,7 +29,7 @@ class xsENTITIES extends xsAnySimpleType
     {
         if (!is_array($this->value)) {
             throw new \InvalidArgumentException(
-                "the provided value for " . __CLASS__ . " Must be an array of type xsENTITY "
+                "The provided value for " . __CLASS__ . " must be an array of type xsENTITY."
             );
         }
         foreach ($this->value as $v) {

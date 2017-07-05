@@ -32,7 +32,7 @@ trait EnumerationTrait
     {
         if (is_array($this->enumeration) && 0 != count($this->enumeration) && !in_array($v, $this->enumeration)) {
             throw new \InvalidArgumentException(
-                "the provided value for " . __CLASS__ . " is not " .
+                "The provided value for " . __CLASS__ . " is not " .
                 implode(" || ", $this->enumeration)
             );
         }

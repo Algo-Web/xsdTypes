@@ -14,7 +14,7 @@ trait PatternTrait
         if (!$this->checkRegexValidPattern($value)) {
             $value = "/" . $value . "/";
             if (!$this->checkRegexValidPattern($value)) {
-                throw new \InvalidArgumentException("Invalid regex Pattern provided: " . __CLASS__);
+                throw new \InvalidArgumentException("Invalid regex pattern provided: " . __CLASS__);
             }
         }
         $this->pattern = $value;
@@ -30,7 +30,7 @@ trait PatternTrait
     {
         if (null != $this->pattern) {
             if (!$this->matchesRegexPattern($this->pattern, $v)) {
-                throw new \InvalidArgumentException("assigned value that dose not match pattern " . __CLASS__);
+                throw new \InvalidArgumentException("Assigned value that does not match pattern " . __CLASS__);
             }
         }
     }
