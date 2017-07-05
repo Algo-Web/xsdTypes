@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4864e311-a358-44a7-afa6-a49dcc51d329" name="Default" comment="">
+    <list default="true" id="4864e311-a358-44a7-afa6-a49dcc51d329" name="Default" comment="Changed pattern">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Facets/LengthTrait.php" afterPath="$PROJECT_DIR$/src/Facets/LengthTrait.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xsLanguage.php" afterPath="$PROJECT_DIR$/src/xsLanguage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Facets/PatternTrait.php" afterPath="$PROJECT_DIR$/src/Facets/PatternTrait.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,21 +15,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LengthTrait.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LengthTrait.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Facets/LengthTrait.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="124" column="5" lean-forward="false" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
+            <state relative-caret-position="142">
+              <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MinMaxTrait.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Facets/MinMaxTrait.php">
+      <file leaf-file-name="PatternTrait.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Facets/PatternTrait.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="50" column="38" lean-forward="false" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
+            <state relative-caret-position="210">
+              <caret line="36" column="9" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -40,8 +39,12 @@
         <entry file="file://$PROJECT_DIR$/src/xsNMTOKENS.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
-              <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-              <folding />
+              <caret line="27" column="33" lean-forward="false" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+              <folding>
+                <marker date="1499235612950" expanded="true" signature="80:167" ph=" The type xsd:NMTOKENS represents a list of NMTOKEN values separated by whitespace. There must be at least one ..." />
+                <marker date="1499235612950" expanded="true" signature="1285:1347" ph="{...}" />
+                <marker date="1499235612950" expanded="true" signature="1285:1349" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,8 +53,12 @@
         <entry file="file://$PROJECT_DIR$/src/xsIDREFS.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
+              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding>
+                <marker date="1499235612944" expanded="true" signature="80:163" ph=" The type xsd:IDREFS represents a list of IDREF values separated by whitespace. There must be at least one IDREF in ..." />
+                <marker date="1499235612944" expanded="true" signature="874:936" ph="{...}" />
+                <marker date="1499235612944" expanded="true" signature="874:938" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,8 +67,12 @@
         <entry file="file://$PROJECT_DIR$/src/xsENTITIES.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-              <folding />
+              <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+              <folding>
+                <marker date="1499235612939" expanded="true" signature="80:216" ph=" The type xsd:ENTITIES represents a list of ENTITY values separated by whitespace. ..." />
+                <marker date="1499235612939" expanded="true" signature="930:992" ph="{...}" />
+                <marker date="1499235612939" expanded="true" signature="930:994" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,7 +82,12 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
               <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-              <folding />
+              <folding>
+                <marker date="1499235612943" expanded="true" signature="38:382" ph=" CThe type xsd:IDREF is used for an attribute that references an ID. All attributes of type xsd:IDREF must reference ..." />
+                <marker date="1499235612943" expanded="true" signature="415:576" ph="{...}" />
+                <marker date="1499235612943" expanded="true" signature="425:483" ph=" Construct ..." />
+                <marker date="1499235612943" expanded="true" signature="525:574" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,7 +97,12 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
               <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1499235612960" expanded="true" signature="38:284" ph=" The type xsd:unsignedInt represents an integer between 0 and 4294967295. An xsd:unsignedInt is a sequence of digits, ..." />
+                <marker date="1499235612960" expanded="true" signature="329:531" ph="{...}" />
+                <marker date="1499235612960" expanded="true" signature="339:394" ph=" Construct ..." />
+                <marker date="1499235612960" expanded="true" signature="436:529" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,8 +111,12 @@
         <entry file="file://$PROJECT_DIR$/src/xsLanguage.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="48" column="29" lean-forward="true" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
-              <folding />
+              <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+              <folding>
+                <marker date="1499235612946" expanded="true" signature="38:188" ph=" The type xsd:language represents a natural language identifier, generally used to indicate the language of a ..." />
+                <marker date="1499235612946" expanded="true" signature="2747:2779" ph="{...}" />
+                <marker date="1499235612946" expanded="true" signature="2747:2781" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,7 +127,11 @@
             <state relative-caret-position="0">
               <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
               <folding>
-                <marker date="1499099066545" expanded="true" signature="346:559" ph="{...}" />
+                <marker date="1499235612961" expanded="true" signature="38:296" ph=" The type xsd:unsignedLong represents an integer between 0 and 18446744073709551615. An xsd:unsignedLong is a ..." />
+                <marker date="1499235612961" expanded="true" signature="348:560" ph="{...}" />
+                <marker date="1499235612961" expanded="true" signature="348:561" ph="{...}" />
+                <marker date="1499235612961" expanded="true" signature="358:413" ph=" Construct ..." />
+                <marker date="1499235612961" expanded="true" signature="455:558" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -112,8 +141,13 @@
         <entry file="file://$PROJECT_DIR$/src/xsUnsignedShort.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-              <folding />
+              <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+              <folding>
+                <marker date="1499235612962" expanded="true" signature="38:283" ph=" The type xsd:unsignedShort represents an integer between 0 and 65535. An xsd:unsignedShort is a sequence of digits, ..." />
+                <marker date="1499235612962" expanded="true" signature="329:526" ph="{...}" />
+                <marker date="1499235612962" expanded="true" signature="339:394" ph=" Construct ..." />
+                <marker date="1499235612962" expanded="true" signature="436:524" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -152,7 +186,6 @@
         <option value="$PROJECT_DIR$/src/xsBoolean.php" />
         <option value="$PROJECT_DIR$/src/Facets/DigitsTrait.php" />
         <option value="$PROJECT_DIR$/src/Facets/EnumerationTrait.php" />
-        <option value="$PROJECT_DIR$/src/Facets/PatternTrait.php" />
         <option value="$PROJECT_DIR$/src/Facets/WhiteSpaceTrait.php" />
         <option value="$PROJECT_DIR$/src/xsAnyURI.php" />
         <option value="$PROJECT_DIR$/src/xsBase64Binary.php" />
@@ -187,6 +220,7 @@
         <option value="$PROJECT_DIR$/src/xsENTITIES.php" />
         <option value="$PROJECT_DIR$/src/xsLanguage.php" />
         <option value="$PROJECT_DIR$/src/Facets/LengthTrait.php" />
+        <option value="$PROJECT_DIR$/src/Facets/PatternTrait.php" />
       </list>
     </option>
   </component>
@@ -477,7 +511,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1496235604163</updated>
-      <workItem from="1498632824380" duration="27333000" />
+      <workItem from="1498632824380" duration="30110000" />
     </task>
     <task id="LOCAL-00001" summary="added more basic types">
       <created>1498633990235</created>
@@ -640,11 +674,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499103502892</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="scrutinizer cleanups">
+      <created>1499148313639</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1499148313639</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27333000" />
+    <option name="totallyTimeSpent" value="30110000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -727,7 +768,8 @@
     <MESSAGE value="Cleanup pass" />
     <MESSAGE value="fixing a scrutinizer issue" />
     <MESSAGE value="forgot to add some traits" />
-    <option name="LAST_COMMIT_MESSAGE" value="forgot to add some traits" />
+    <MESSAGE value="scrutinizer cleanups" />
+    <option name="LAST_COMMIT_MESSAGE" value="scrutinizer cleanups" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -810,14 +852,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Facets/EnumerationTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Facets/PatternTrait.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
@@ -920,7 +954,7 @@
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <marker date="1499098955708" expanded="true" signature="38:655" ph=" The type xsd:ID is used for an attribute that uniquely identifies an element in an XML document. An xsd:ID value must be an NCName. This means that it must start with a letter or underscore, and can only contain letters, digits, underscores, hyphens, and periods. ..." />
+            <marker date="1499235612942" expanded="true" signature="38:656" ph=" The type xsd:ID is used for an attribute that uniquely identifies an element in an XML document. An xsd:ID value must be an NCName. This means that it must start with a letter or underscore, and can only contain letters, digits, underscores, hyphens, and periods. ..." />
           </folding>
         </state>
       </provider>
@@ -954,7 +988,7 @@
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <marker date="1499099065644" expanded="true" signature="38:441" ph=" The type xsd:Name represents an XML name, which can be used as an element-type name or attribute name, among other things. Specifically, this means that values must start with a letter, underscore(_), or colon (:), and may contain only letters, digits, underscores (_), colons (:), hyphens (-), and periods (.). Colons should only be used to separate namespace prefixes from local names. ..." />
+            <marker date="1499235612952" expanded="true" signature="38:443" ph=" The type xsd:Name represents an XML name, which can be used as an element-type name or attribute name, among other things. Specifically, this means that values must start with a letter, underscore(_), or colon (:), and may contain only letters, digits, underscores (_), colons (:), hyphens (-), and periods (.). Colons should only be used to separate namespace prefixes from local names. ..." />
           </folding>
         </state>
       </provider>
@@ -964,7 +998,7 @@
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <marker date="1499099065754" expanded="true" signature="38:394" ph=" The type xsd:NCName represents an XML non-colonized name, which is simply a name that does not contain colons. An xsd:NCName value must start with either a letter or underscore (_) and may contain only letters, digits, underscores (_), hyphens (-), and periods (.). This is equivalent to the Name type, except that colons are not permitted. ..." />
+            <marker date="1499235612948" expanded="true" signature="38:395" ph=" The type xsd:NCName represents an XML non-colonized name, which is simply a name that does not contain colons. An xsd:NCName value must start with either a letter or underscore (_) and may contain only letters, digits, underscores (_), hyphens (-), and periods (.). This is equivalent to the Name type, except that colons are not permitted. ..." />
           </folding>
         </state>
       </provider>
@@ -990,7 +1024,7 @@
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <marker date="1499099066376" expanded="true" signature="349:543" ph="{...}" />
+            <marker date="1499235612954" expanded="true" signature="367:561" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1016,7 +1050,7 @@
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <marker date="1499099217596" expanded="true" signature="848:1216" ph="{...}" />
+            <marker date="1499235612951" expanded="true" signature="1243:1259" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1026,7 +1060,7 @@
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <marker date="1499099065699" expanded="true" signature="347:541" ph="{...}" />
+            <marker date="1499235612956" expanded="true" signature="362:556" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1036,7 +1070,7 @@
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <marker date="1499099217646" expanded="true" signature="526:894" ph="{...}" />
+            <marker date="1499235612957" expanded="true" signature="918:934" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1077,15 +1111,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="50" column="38" lean-forward="false" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
-          <folding />
+          <folding>
+            <marker date="1499235612931" expanded="true" signature="107:2176" ph="{...}" />
+            <marker date="1499235612931" expanded="true" signature="1731:2174" ph="{...}" />
+            <marker date="1499235612931" expanded="true" signature="1780:1878" ph="..." />
+            <marker date="1499235612931" expanded="true" signature="1824:1878" ph="..." />
+            <marker date="1499235612931" expanded="true" signature="2110:2157" ph="..." />
+            <marker date="1499235612931" expanded="true" signature="2110:2167" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xsNMTOKENS.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-          <folding />
+          <caret line="27" column="33" lean-forward="false" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+          <folding>
+            <marker date="1499235612950" expanded="true" signature="80:167" ph=" The type xsd:NMTOKENS represents a list of NMTOKEN values separated by whitespace. There must be at least one ..." />
+            <marker date="1499235612950" expanded="true" signature="1285:1347" ph="{...}" />
+            <marker date="1499235612950" expanded="true" signature="1285:1349" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1101,23 +1146,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding />
+          <folding>
+            <marker date="1499235612943" expanded="true" signature="38:382" ph=" CThe type xsd:IDREF is used for an attribute that references an ID. All attributes of type xsd:IDREF must reference ..." />
+            <marker date="1499235612943" expanded="true" signature="415:576" ph="{...}" />
+            <marker date="1499235612943" expanded="true" signature="425:483" ph=" Construct ..." />
+            <marker date="1499235612943" expanded="true" signature="525:574" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xsIDREFS.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <marker date="1499235612944" expanded="true" signature="80:163" ph=" The type xsd:IDREFS represents a list of IDREF values separated by whitespace. There must be at least one IDREF in ..." />
+            <marker date="1499235612944" expanded="true" signature="874:936" ph="{...}" />
+            <marker date="1499235612944" expanded="true" signature="874:938" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xsENTITIES.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding />
+          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <marker date="1499235612939" expanded="true" signature="80:216" ph=" The type xsd:ENTITIES represents a list of ENTITY values separated by whitespace. ..." />
+            <marker date="1499235612939" expanded="true" signature="930:992" ph="{...}" />
+            <marker date="1499235612939" expanded="true" signature="930:994" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1126,7 +1184,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding>
-            <marker date="1499099066545" expanded="true" signature="346:559" ph="{...}" />
+            <marker date="1499235612961" expanded="true" signature="38:296" ph=" The type xsd:unsignedLong represents an integer between 0 and 18446744073709551615. An xsd:unsignedLong is a ..." />
+            <marker date="1499235612961" expanded="true" signature="348:560" ph="{...}" />
+            <marker date="1499235612961" expanded="true" signature="348:561" ph="{...}" />
+            <marker date="1499235612961" expanded="true" signature="358:413" ph=" Construct ..." />
+            <marker date="1499235612961" expanded="true" signature="455:558" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1134,8 +1196,13 @@
     <entry file="file://$PROJECT_DIR$/src/xsUnsignedShort.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-          <folding />
+          <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding>
+            <marker date="1499235612962" expanded="true" signature="38:283" ph=" The type xsd:unsignedShort represents an integer between 0 and 65535. An xsd:unsignedShort is a sequence of digits, ..." />
+            <marker date="1499235612962" expanded="true" signature="329:526" ph="{...}" />
+            <marker date="1499235612962" expanded="true" signature="339:394" ph=" Construct ..." />
+            <marker date="1499235612962" expanded="true" signature="436:524" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1143,22 +1210,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1499235612960" expanded="true" signature="38:284" ph=" The type xsd:unsignedInt represents an integer between 0 and 4294967295. An xsd:unsignedInt is a sequence of digits, ..." />
+            <marker date="1499235612960" expanded="true" signature="329:531" ph="{...}" />
+            <marker date="1499235612960" expanded="true" signature="339:394" ph=" Construct ..." />
+            <marker date="1499235612960" expanded="true" signature="436:529" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xsLanguage.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="48" column="29" lean-forward="true" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
-          <folding />
+          <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+          <folding>
+            <marker date="1499235612946" expanded="true" signature="38:188" ph=" The type xsd:language represents a natural language identifier, generally used to indicate the language of a ..." />
+            <marker date="1499235612946" expanded="true" signature="2747:2779" ph="{...}" />
+            <marker date="1499235612946" expanded="true" signature="2747:2781" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Facets/LengthTrait.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="124" column="5" lean-forward="false" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
+        <state relative-caret-position="142">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Facets/PatternTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="36" column="9" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
           <folding />
         </state>
       </provider>

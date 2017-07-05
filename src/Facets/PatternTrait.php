@@ -7,7 +7,7 @@ trait PatternTrait
      * @Exclude
      * @var string Defines the exact sequence of characters that are acceptable.
      */
-    private $pattern = null;
+    private $pattern = array();
 
     protected function setPatternFacet($value)
     {
@@ -17,7 +17,7 @@ trait PatternTrait
                 throw new \InvalidArgumentException("Invalid regex pattern provided: " . __CLASS__);
             }
         }
-        $this->pattern = $value;
+        $this->pattern[] = $value;
     }
 
     private function checkRegexValidPattern($pattern)
@@ -28,9 +28,11 @@ trait PatternTrait
 
     private function checkPattern($v)
     {
-        if (null != $this->pattern) {
-            if (!$this->matchesRegexPattern($this->pattern, $v)) {
-                throw new \InvalidArgumentException("Assigned value that does not match pattern " . __CLASS__);
+        if (!empty($this->pattern)) {
+            foreach ($this->pattern as $pattern) {
+                if (!$this->matchesRegexPattern($pattern, $v)) {
+                    throw new \InvalidArgumentException("Assigned value for " . __CLASS__ . " does not match pattern " . $pattern);
+                }
             }
         }
     }
