@@ -84,6 +84,6 @@ trait DigitsTrait
         if (null != $this->fractionDigits) {
             return round($v, $this->fractionDigits);
         }
-        return null;
+        return;
     }
 }
