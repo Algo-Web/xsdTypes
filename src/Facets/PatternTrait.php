@@ -22,13 +22,13 @@ trait PatternTrait
 
     private function checkRegexValidPattern($pattern)
     {
-        return (@preg_match($pattern, null) === false);
+        return (false === @preg_match($pattern, null));
     }
 
 
     private function checkPattern($v)
     {
-        if ($this->pattern != null) {
+        if (null != $this->pattern) {
             if (!$this->matchesRegexPattern($this->pattern, $v)) {
                 throw new \InvalidArgumentException("assigned value that dose not match pattern " . __CLASS__);
             }
