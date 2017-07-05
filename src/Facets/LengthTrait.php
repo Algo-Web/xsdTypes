@@ -54,67 +54,20 @@ trait LengthTrait
         $this->maxLength = $value;
     }
 
-    private function checkMaxLength($v)
+    private function checkLength($v)
     {
+        if (null != $this->minLength) {
+            $this->checkMinLength($v);
+        }
         if (null != $this->maxLength) {
-            if (is_array($v)) {
-                $this->checkMaxLengthArray($v);
-            } else {
-                $this->checkMaxLengthString($v);
-            }
-        }
-    }
-
-    private function checkMaxLengthArray($v)
-    {
-        assert(is_array($v));
-        $arrayLen = count($v);
-        if ($arrayLen < $this->maxLength) {
-            throw new \InvalidArgumentException(
-                "The provided value for " . __CLASS__ . " is too short - MaxLength: "
-                . $this->maxLength
-            );
-        }
-    }
-
-    private function checkMaxLengthString($v)
-    {
-        $stringLen = strlen($v);
-        if ($stringLen < $this->maxLength) {
-            throw new \InvalidArgumentException(
-                "The provided value for " . __CLASS__ . " is too short - MaxLength: "
-                . $this->maxLength
-            );
+            $this->checkMaxLength($v);
         }
     }
 
     private function checkMinLength($v)
     {
-        if (null != $this->minLength) {
-            if (is_array($v)) {
-                $this->checkMinLengthArray($v);
-            } else {
-                $this->checkMinLengthString($v);
-            }
-        }
-    }
-
-    private function checkMinLengthArray($v)
-    {
-        assert(is_array($v));
-        $arrayLen = count($v);
-        if ($arrayLen > $this->minLength) {
-            throw new \InvalidArgumentException(
-                "The provided value for " . __CLASS__ . " is too long - MinLength: "
-                . $this->minLength
-            );
-        }
-    }
-
-    private function checkMinLengthString($v)
-    {
-        $stringLen = strlen($v);
-        if ($stringLen > $this->minLength) {
+        $len = $this->getLengthForValue($v);
+        if ($len > $this->minLength) {
             throw new \InvalidArgumentException(
                 "The provided value for " . __CLASS__ . " is too long - MinLength: "
                 . $this->minLength
@@ -128,5 +81,16 @@ trait LengthTrait
             return count($v);
         }
         return strlen($v);
+    }
+
+    private function checkMaxLength($v)
+    {
+        $len = $this->getLengthForValue($v);
+        if ($len < $this->maxLength) {
+            throw new \InvalidArgumentException(
+                "The provided value for " . __CLASS__ . " is too short - MaxLength: "
+                . $this->maxLength
+            );
+        }
     }
 }

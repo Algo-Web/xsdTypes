@@ -28,7 +28,6 @@ class xsQName extends xsAnySimpleType
 
     protected function isOK()
     {
-        $this->checkMaxLength($this->value);
-        $this->checkMinLength($this->value);
+        $this->checkLength($this->value);
     }
 }

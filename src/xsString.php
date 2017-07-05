@@ -44,8 +44,7 @@ class xsString extends xsAnySimpleType
 
     protected function isOK()
     {
-        $this->checkMaxLength($this->value);
-        $this->checkMinLength($this->value);
+        $this->checkLength($this->value);
         if (is_array($this->value) || is_object($this->value)) {
             throw new \InvalidArgumentException(
                 "The provided value for " . __CLASS__ . " must not be an array or an object."
