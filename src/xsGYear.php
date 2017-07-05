@@ -35,7 +35,6 @@ class xsGYear extends xsAnySimpleType
     {
         parent::fixValue();
         $v = new \DateTime($this->value);
-        //TODO: TechDebt, This needs to format to
         $this->value = $v->format('Y');
     }
 

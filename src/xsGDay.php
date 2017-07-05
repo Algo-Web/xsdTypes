@@ -36,7 +36,7 @@ class xsGDay extends xsAnySimpleType
     {
         parent::fixValue();
         $v = new \DateTime($this->value);
-        $this->value = '--' . $v->format('d');
+        $this->value = $v->format('---d');
     }
 
     protected function isOK()

@@ -35,8 +35,7 @@ class xsGMonthDay extends xsAnySimpleType
     {
         parent::fixValue();
         $v = new \DateTime($this->value);
-        //TODO: TechDebt, This needs to format to
-        $this->value = $v->format(\DateTime::RFC3339);
+        $this->value = $v->format('--m-d');
     }
 
     protected function isOK()
