@@ -2,6 +2,8 @@
 
 namespace AlgoWeb\xsdTypes;
 
+use AlgoWeb\xsdTypes\Facets\LengthTrait;
+
 /**
  * Class xsQName
  * @package AlgoWeb\xsdTypesThe type xsd:QName represents an XML namespace-qualified name. A xsd:QName value consists
@@ -26,7 +28,7 @@ class xsQName extends xsAnySimpleType
 
     protected function isOK()
     {
-        $this->checkMaxLength($this->__value);
-        $this->checkMinLength($this->__value);
+        $this->checkMaxLength($this->value);
+        $this->checkMinLength($this->value);
     }
 }

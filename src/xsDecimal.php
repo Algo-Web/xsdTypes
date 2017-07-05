@@ -31,13 +31,13 @@ class xsDecimal extends xsAnySimpleType
     protected function fixValue()
     {
         parent::fixValue();
-        $this->__value = $this->fixFractionDigits($this->__value);
+        $this->value = $this->fixFractionDigits($this->value);
     }
 
     protected function isOK()
     {
-        $this->checkDigitLength($this->__value);
-        $this->checkFractionDigits($this->__value);
-        $this->CheckMinMax($this->__value);
+        $this->checkDigitLength($this->value);
+        $this->checkFractionDigits($this->value);
+        $this->CheckMinMax($this->value);
     }
 }

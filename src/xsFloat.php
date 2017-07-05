@@ -32,6 +32,6 @@ class xsFloat extends xsAnySimpleType
 
     protected function isOK()
     {
-        $this->CheckMinMax($this->__value);
+        $this->CheckMinMax($this->value);
     }
 }

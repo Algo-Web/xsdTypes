@@ -27,27 +27,27 @@ class xsNMTOKENS extends xsAnySimpleType
 
     protected function fixValue()
     {
-        if (is_string($this->__value)) {
-            $parts = explode(" ", $this->__value);
-            $this->__value = [];
+        if (is_string($this->value)) {
+            $parts = explode(" ", $this->value);
+            $this->value = [];
             foreach ($parts as $part) {
-                $this->__value[] = new xsNMTOKEN($part);
+                $this->value[] = new xsNMTOKEN($part);
             }
         }
-        assert(is_array($this->__value), "some how nmtokens ended up not being an array.");
-        foreach ($this->__value as $v) {
+        assert(is_array($this->value), "some how nmtokens ended up not being an array.");
+        foreach ($this->value as $v) {
             $v->fixValue($v);
         }
     }
 
     protected function isOK()
     {
-        if (!is_array($this->__value)) {
+        if (!is_array($this->value)) {
             throw new \InvalidArgumentException(
                 "the provided value for " . __CLASS__ . " Must be an array of type xsNMTOKEN "
             );
         }
-        foreach ($this->__value as $v) {
+        foreach ($this->value as $v) {
             $v->isOKInternal();
         }
     }

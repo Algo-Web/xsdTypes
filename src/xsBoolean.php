@@ -22,7 +22,7 @@ class xsBoolean extends xsAnySimpleType
 
     protected function isOK()
     {
-        if (boolval($this->__value) !== $this->__value) {
+        if (boolval($this->value) !== $this->value) {
             throw new \InvalidArgumentException(
                 "the provided value for " . __CLASS__ . " needs to be a boolean: "
             );

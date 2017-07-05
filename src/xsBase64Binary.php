@@ -35,7 +35,7 @@ class xsBase64Binary extends xsAnySimpleType
 
     protected function isOK()
     {
-        $this->checkMaxLength($this->__value);
-        $this->checkMinLength($this->__value);
+        $this->checkMaxLength($this->value);
+        $this->checkMinLength($this->value);
     }
 }

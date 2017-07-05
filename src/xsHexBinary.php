@@ -2,6 +2,8 @@
 
 namespace AlgoWeb\xsdTypes;
 
+use AlgoWeb\xsdTypes\Facets\LengthTrait;
+
 /**
  * The xsd:hexBinary type represents binary data as a sequence of binary octets. It uses hexadecimal encoding, where
  * each binary octet is a two-character hexadecimal number. Lowercase and uppercase letters A through F are permitted.
@@ -25,7 +27,7 @@ class xsHexBinary extends xsAnySimpleType
 
     protected function isOK()
     {
-        $this->checkMaxLength($this->__value);
-        $this->checkMinLength($this->__value);
+        $this->checkMaxLength($this->value);
+        $this->checkMinLength($this->value);
     }
 }

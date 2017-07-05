@@ -43,28 +43,28 @@ class xsLanguage extends xsToken
     {
         parent::fixValue();
 
-        $this->__value = trim($this->__value);
+        $this->value = trim($this->value);
     }
 
     protected function isOK()
     {
         parent::isOK();
-        if (null == $this->__value) {
+        if (null == $this->value) {
             throw new \InvalidArgumentException(
                 "the provided value for " . __CLASS__ . " can not be null "
             );
         }
-        if (!is_string($this->__value)) {
+        if (!is_string($this->value)) {
             throw new \InvalidArgumentException(
                 "the provided value for " . __CLASS__ . " Must be a string "
             );
         }
-        if (empty(trim($this->__value))) {
+        if (empty(trim($this->value))) {
             throw new \InvalidArgumentException(
                 "the provided value for " . __CLASS__ . " Must be a not be a blank string "
             );
         }
-        if (8 < strlen($this->__value)) {
+        if (8 < strlen($this->value)) {
             throw new \InvalidArgumentException(
                 "the provided value for " . __CLASS__ . " Must be a not be longer then 8 characters "
             );

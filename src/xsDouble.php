@@ -2,6 +2,8 @@
 
 namespace AlgoWeb\xsdTypes;
 
+use AlgoWeb\xsdTypes\Facets\MinMaxTrait;
+
 /**
  * The type xsd:double represents an IEEE double-precision 64-bit floating-point number. The format of xsd:double
  * values is a mantissa (a number which conforms to the type decimal) followed, optionally, by the character "E"
@@ -30,6 +32,6 @@ class xsDouble extends xsAnySimpleType
 
     protected function isOK()
     {
-        $this->CheckMinMax($this->__value);
+        $this->CheckMinMax($this->value);
     }
 }

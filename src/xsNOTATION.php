@@ -2,6 +2,8 @@
 
 namespace AlgoWeb\xsdTypes;
 
+use AlgoWeb\xsdTypes\Facets\LengthTrait;
+
 /**
  * The type xsd:NOTATION represents a reference to a notation. A notation is a method of interpreting XML and
  * non-XML content. For example, if an element in an XML document contains binary graphics data in JPEG format,
@@ -30,7 +32,7 @@ abstract class xsNOTATION extends xsAnySimpleType
 
     protected function isOK()
     {
-        $this->checkMaxLength($this->__value);
-        $this->checkMinLength($this->__value);
+        $this->checkMaxLength($this->value);
+        $this->checkMinLength($this->value);
     }
 }

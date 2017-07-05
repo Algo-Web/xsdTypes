@@ -22,9 +22,9 @@ abstract class xsAnySimpleType
     protected $fixed = false;
 
     /**
-     * @property mixed $__value
+     * @property mixed $value
      */
-    protected $__value = null;
+    protected $value = null;
 
     /**
      * Construct
@@ -33,7 +33,7 @@ abstract class xsAnySimpleType
      */
     public function __construct($value)
     {
-        $this->__value = $value;
+        $this->value = $value;
     }
 
     public function __toString()
@@ -42,18 +42,18 @@ abstract class xsAnySimpleType
             $this->fixValue();
             $this->isOKInternal();
         }
-        return $this->__value;
+        return $this->value;
     }
 
     protected function fixValue()
     {
-        $this->__value = $this->fixWhitespace($this->__value);
+        $this->value = $this->fixWhitespace($this->value);
     }
 
     protected function isOKInternal()
     {
-        $this->checkEnumeration($this->__value);
-        $this->checkPattern($this->__value);
+        $this->checkEnumeration($this->value);
+        $this->checkPattern($this->value);
         $this->isOK();
     }
 

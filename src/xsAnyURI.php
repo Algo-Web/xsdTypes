@@ -3,6 +3,7 @@
 namespace AlgoWeb\xsdTypes;
 
 //TODO: we really need a better check if valid url here
+use AlgoWeb\xsdTypes\Facets\LengthTrait;
 
 /**
  * The type xsd:anyURI represents a Uniform Resource Identifier (URI) reference. URIs are used to identify resources,
@@ -53,7 +54,7 @@ class xsAnyURI extends xsAnySimpleType
 
     protected function isOK()
     {
-        $this->checkMaxLength($this->__value);
-        $this->checkMinLength($this->__value);
+        $this->checkMaxLength($this->value);
+        $this->checkMinLength($this->value);
     }
 }

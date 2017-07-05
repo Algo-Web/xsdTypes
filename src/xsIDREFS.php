@@ -26,12 +26,12 @@ class xsIDREFS extends xsAnySimpleType
     protected function isOK()
     {
         parent::isOK();
-        if (!is_array($this->__value)) {
+        if (!is_array($this->value)) {
             throw new \InvalidArgumentException(
                 "the provided value for " . __CLASS__ . " Must be an array of type xsIDREF "
             );
         }
-        foreach ($this->__value as $v) {
+        foreach ($this->value as $v) {
             $v->isOKInternal();
         }
     }
