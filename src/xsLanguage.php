@@ -49,16 +49,6 @@ class xsLanguage extends xsToken
     protected function isOK()
     {
         parent::isOK();
-        if (null == $this->value) {
-            throw new \InvalidArgumentException(
-                "The provided value for " . __CLASS__ . " can not be null."
-            );
-        }
-        if (!is_string($this->value)) {
-            throw new \InvalidArgumentException(
-                "The provided value for " . __CLASS__ . " must be a string."
-            );
-        }
         if (empty(trim($this->value))) {
             throw new \InvalidArgumentException(
                 "The provided value for " . __CLASS__ . " must not be a blank string."
