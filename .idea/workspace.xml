@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4864e311-a358-44a7-afa6-a49dcc51d329" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xsLanguage.php" afterPath="$PROJECT_DIR$/src/xsLanguage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Facets/MinMaxTrait.php" afterPath="$PROJECT_DIR$/src/Facets/MinMaxTrait.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -95,26 +95,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="xsUnsignedInt.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/xsUnsignedInt.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding>
-                <marker date="1499235612960" expanded="true" signature="38:284" ph=" The type xsd:unsignedInt represents an integer between 0 and 4294967295. An xsd:unsignedInt is a sequence of digits, ..." />
-                <marker date="1499235612960" expanded="true" signature="329:531" ph="{...}" />
-                <marker date="1499235612960" expanded="true" signature="339:394" ph=" Construct ..." />
-                <marker date="1499235612960" expanded="true" signature="436:529" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="xsLanguage.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="xsLanguage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/xsLanguage.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="261">
               <caret line="50" column="23" lean-forward="false" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MinMaxTrait.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Facets/MinMaxTrait.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="69" column="31" lean-forward="false" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -174,7 +169,6 @@
         <option value="$PROJECT_DIR$/src/xsUnsignedInt.php" />
         <option value="$PROJECT_DIR$/src/xsUnsignedLong.php" />
         <option value="$PROJECT_DIR$/src/xsUnsignedShort.php" />
-        <option value="$PROJECT_DIR$/src/Facets/MinMaxTrait.php" />
         <option value="$PROJECT_DIR$/src/xsNMTOKENS.php" />
         <option value="$PROJECT_DIR$/src/IDREF.php" />
         <option value="$PROJECT_DIR$/src/xsIDREF.php" />
@@ -189,6 +183,7 @@
         <option value="$PROJECT_DIR$/src/xsQName.php" />
         <option value="$PROJECT_DIR$/src/Facets/LengthTrait.php" />
         <option value="$PROJECT_DIR$/src/xsLanguage.php" />
+        <option value="$PROJECT_DIR$/src/Facets/MinMaxTrait.php" />
       </list>
     </option>
   </component>
@@ -479,7 +474,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1496235604163</updated>
-      <workItem from="1498632824380" duration="30995000" />
+      <workItem from="1498632824380" duration="31197000" />
     </task>
     <task id="LOCAL-00001" summary="added more basic types">
       <created>1498633990235</created>
@@ -663,11 +658,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499236399034</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="removed unneeded checks">
+      <created>1499236787311</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1499236787311</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30995000" />
+    <option name="totallyTimeSpent" value="31197000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -727,7 +729,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Got anySimpleType Sorted Out" />
     <MESSAGE value="Cleanup" />
     <MESSAGE value="Removed old files" />
     <MESSAGE value="Next set of blocks added" />
@@ -752,7 +753,8 @@
     <MESSAGE value="scrutinizer cleanups" />
     <MESSAGE value="Changed pattern Facet to handle patterns as array" />
     <MESSAGE value="cleaned up the length trait" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleaned up the length trait" />
+    <MESSAGE value="removed unneeded checks" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed unneeded checks" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1038,21 +1040,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Facets/MinMaxTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="50" column="38" lean-forward="false" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
-          <folding>
-            <marker date="1499235612931" expanded="true" signature="107:2176" ph="{...}" />
-            <marker date="1499235612931" expanded="true" signature="1731:2174" ph="{...}" />
-            <marker date="1499235612931" expanded="true" signature="1780:1878" ph="..." />
-            <marker date="1499235612931" expanded="true" signature="1824:1878" ph="..." />
-            <marker date="1499235612931" expanded="true" signature="2110:2157" ph="..." />
-            <marker date="1499235612931" expanded="true" signature="2110:2167" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/xsNMTOKENS.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -1218,6 +1205,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
           <caret line="50" column="23" lean-forward="false" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Facets/MinMaxTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="69" column="31" lean-forward="false" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
           <folding />
         </state>
       </provider>
