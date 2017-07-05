@@ -56,13 +56,11 @@ trait LengthTrait
 
     private function checkMaxLength($v)
     {
-        if ($this->maxLength != null) {
-            if ($this->minLength != null) {
-                if (is_array($v)) {
-                    $this->checkMaxLengthArray($v);
-                } else {
-                    $this->checkMaxLengthString($v);
-                }
+        if (null != $this->maxLength) {
+            if (is_array($v)) {
+                $this->checkMaxLengthArray($v);
+            } else {
+                $this->checkMaxLengthString($v);
             }
         }
     }
@@ -92,7 +90,7 @@ trait LengthTrait
 
     private function checkMinLength($v)
     {
-        if ($this->minLength != null) {
+        if (null != $this->minLength) {
             if (is_array($v)) {
                 $this->checkMinLengthArray($v);
             } else {

@@ -20,12 +20,12 @@ trait EnumerationTrait
     /**
      * @param string $enumorationValue adds a value to the enumeration set.
      */
-    protected function addEnumoration($enumorationValue)
+    protected function addEnumeration($enumerationValue)
     {
         if (!is_array($this->enumeration)) {
             $this->enumeration = [];
         }
-        $this->enumeration[] = $enumorationValue;
+        $this->enumeration[] = $enumerationValue;
     }
 
     private function checkEnumeration($v)
