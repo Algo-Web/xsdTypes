@@ -2,7 +2,6 @@
 
 namespace AlgoWeb\xsdTypes;
 
-//TODO: we really need a better check if valid url here
 use AlgoWeb\xsdTypes\Facets\LengthTrait;
 
 /**
