@@ -25,19 +25,19 @@ trait EnumerationTrait
         if (!is_array($this->enumeration)) {
             $this->enumeration = [];
         }
-        if($this->handleAddArray($enumerationValue)){
-
+        if ($this->handleAddArray($enumerationValue)) {
         }
         $this->handleAddArray($enumerationValue) ? :$this->enumeration[] = $enumerationValue;
     }
     /**
      * @param string $enumerationValue adds a value to the enumeration set
      */
-    private function handleAddArray($enumerationValue){
-        if(!is_array($enumerationValue)){
+    private function handleAddArray($enumerationValue)
+    {
+        if (!is_array($enumerationValue)) {
             return false;
         }
-        foreach($enumerationValue as $eValue){
+        foreach ($enumerationValue as $eValue) {
             $this->addEnumeration($eValue);
         }
         return;
