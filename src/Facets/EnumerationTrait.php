@@ -25,8 +25,6 @@ trait EnumerationTrait
         if (!is_array($this->enumeration)) {
             $this->enumeration = [];
         }
-        if ($this->handleAddArray($enumerationValue)) {
-        }
         $this->handleAddArray($enumerationValue) ? :$this->enumeration[] = $enumerationValue;
     }
     /**
